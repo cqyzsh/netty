@@ -15,7 +15,7 @@ import static com.demo.netty.ch2.Constant.N_PORT;
  * 单机百万连接指的是可以同时接受百万的请求，请求没有断开，并不是指的TPS
  * 服务器端启动100个端口进行监听
  * 用@Sharable注解，所用监听端口共用一个handler
- * 客户端循环箱100个端口请求连接
+ * 客户端循环向100个端口请求连接
  * 打包成jar放到虚拟机中运行
  * java -jar server.jar -Xms6.5g -Xmx6.5g -XX:NewSize=5.5g -XX:MaxNewSize=5.5g -XX:MaxDirectMemorySize=1g
  * java -jar client.jar -Xms6.5g -Xmx6.5g -XX:NewSize=5.5g -XX:MaxNewSize=5.5g -XX:MaxDirectMemorySize=1g
